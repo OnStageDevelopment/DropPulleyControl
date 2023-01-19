@@ -2,7 +2,7 @@ local current_version = "1.0"
 --first of all update itself it need be.
 local self_request = http.get("https://raw.githubusercontent.com/OnStageDevelopment/DropPulleyControl/main/startup.lua")
 print(self_request.readLine())
-version = string.gmatch(example, '([^"]+)') 
+version = string.gmatch(self_request.readLine(), '([^"]+)') 
 print(version)
 -- Check if folders and files exist
 
