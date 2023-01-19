@@ -2,6 +2,8 @@
 
 
 
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+
 # This Program is still in alpha. Do not expect it to be stable.
 
 This program runs on a computer connected to a rope pulley via a electric motor and can control the movement of the pulley.
