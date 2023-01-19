@@ -30,6 +30,16 @@ In the future a control program will be written but this is the current alpha st
 
 
 
+## To Get Started!
+
+Simply run this code on a new computer with no files to download all the required files and updater: 
+
+```wget run https://raw.githubusercontent.com/OnStageDevelopment/DropPulleyControl/main/startup.lua```
+
+The Computer will then reboot and start the initial setup
+
+
+
 ### Available Commands
 
 The current commands available in the control API are
