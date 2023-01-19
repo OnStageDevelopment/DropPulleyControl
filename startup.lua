@@ -1,3 +1,8 @@
+local current_version = "1.0"
+--first of all update itself it need be.
+local self_request = http.get("https://raw.githubusercontent.com/OnStageDevelopment/DropPulleyControl/main/startup.lua")
+print(self_request.readLine())
+
 -- Check if folders and files exist
 
 if not fs.isDir("libs") then
@@ -23,15 +28,17 @@ if not fs.exists("config.json") then
 end
 
 local jsonfile = fs.open("libs/json.lua","w")
-local request = http.get("https://raw.githubusercontent.com/idkwhyievenhavegithub/MCTheatreThings/main/DropControl/libs/json.lua")
+local request = http.get("https://raw.githubusercontent.com/OnStageDevelopment/DropPulleyControl/main/node/libs/json.lua")
 jsonfile.write(request.readAll())
 jsonfile.close()
+request.close()
 print("Updated JSON File")
 
 local dropsfile = fs.open("drops.lua","w")
-local request = http.get("https://raw.githubusercontent.com/idkwhyievenhavegithub/MCTheatreThings/main/DropControl/drops.lua")
+local request = http.get("https://raw.githubusercontent.com/OnStageDevelopment/DropPulleyControl/main/node/drops.lua")
 dropsfile.write(request.readAll())
 dropsfile.close()
+request.close()
 print("Updated Drops File")
 
 
