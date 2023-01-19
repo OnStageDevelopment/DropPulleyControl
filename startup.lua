@@ -1,4 +1,4 @@
-updatercode = http.get("https://raw.githubusercontent.com/OnStageDevelopment/DropPulleyControl/main/startup.lua")
+updatercode = http.get("https://raw.githubusercontent.com/OnStageDevelopment/DropPulleyControl/main/updater.lua")
 ingested = updatercode.readAll()
 updater_file = fs.open("updater.lua","w")
 updater_file.write(ingested)
