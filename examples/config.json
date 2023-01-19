@@ -1,0 +1,10 @@
+{
+    "node_network":"flynet",
+    "type":"scenic",
+    "id":1,
+    "dead_in":20,
+    "dead_out":10,
+    "complete_out":4,
+    "reversed":"false",
+    "default_speed":64
+}
