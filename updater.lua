@@ -1,10 +1,3 @@
-local current_version = "1.1"
---first of all update itself it need be.
-local self_request = http.get("https://raw.githubusercontent.com/OnStageDevelopment/DropPulleyControl/main/startup.lua")
-
-res = self_request.readLine()
-print(string.match(res,"%d+"))
-
 -- Check if folders and files exist
 
 if not fs.isDir("libs") then
