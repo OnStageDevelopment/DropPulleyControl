@@ -6,6 +6,8 @@
 
 # This Program is still in alpha. Do not expect it to be stable.
 
+*I am using this as a learning project to further my knowledge in programming, so dont expect the best code :)*
+
 This program runs on a computer connected to a rope pulley via a electric motor and can control the movement of the pulley.
 
 
